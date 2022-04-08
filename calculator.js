@@ -9,11 +9,15 @@ switch(operator) {
         result = x+y;
       break;
     case "/":
-      result = x/y;
+        result = x/y;
       break;
     default:
         console.error('Invalid expression');
   }
 
-console.log(result);
-
+if(result===Infinity) {
+    console.error('Divide by zero')
+}
+else{
+    console.log(result);
+}
