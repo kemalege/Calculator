@@ -8,6 +8,9 @@ switch(operator) {
     case "+":
         result = x+y;
       break;
+    case "/":
+      result = x/y;
+      break;
     default:
         console.error('Invalid expression');
   }
